@@ -3,17 +3,33 @@ var router = express.Router();
 
 const juani = {
     name: 'Juani',
-    surname: 'Gallo'
+    surname: 'Gallo',
+    age: 30
 }
 const bel = {
     name: 'Belen',
-    surname: 'Rey'
+    surname: 'Rey',
+    age: 30
 }
 const goncy = {
     name: 'Gonzalo',
-    surname: 'Pozzo'
+    surname: 'Pozzo',
+    age: 27
 }
-const persons = [juani, bel, goncy]
+
+const pepe = {
+    name: 'Pepe',
+    surname: 'Argento',
+    age: 45
+}
+
+const faus = {
+    name: 'Faustino',
+    surname: 'Beatrice',
+    age: 19
+}
+
+const persons = [juani, bel, goncy, pepe, faus]
 
 router.get('/', (req, res, next) => {
     res.json(persons)
